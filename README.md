@@ -23,8 +23,13 @@ pip install -U utx
 ![](https://files.mdnice.com/user/17535/555b68ce-bc10-472b-a904-b0b17203f58a.png)
 
 - utx提供了快速创建项目的能力，也就是脚手架。
+- 【app脚手架】
 ```shell
 utx startproject project_name
+```
+- 【web脚手架】
+```shell
+utx startproject-web project_name
 ```
 ```text
 $ utx startproject demo
@@ -91,7 +96,7 @@ utx本身是很轻的。
 
 ## 功能介绍
 
-1. 支持android,ios 平台的自动化测试框架
+1. 支持android,ios,web 平台的自动化测试框架
 2. 脚本批量执行
 3. 每个脚本执行日志分开存放
 4. 每个脚本单独生成一个html报告并在父文件夹生成一个聚合报告
@@ -101,7 +106,7 @@ utx本身是很轻的。
 8. 自带脚手架工具可以快速生成框架目录
 
 
-## 使用说明
+## app使用说明
 
 - 只需在配置文件中填好相关内容，即可运行！
 ```ini
@@ -134,8 +139,7 @@ is_all = 0
 cases = test.air
 ```
 
-
-- 启动命令
+- app启动命令
 1. 普通启动
 ```shell
 python run.py
@@ -146,6 +150,42 @@ python run.py
 python run.py --platform=Android --device=127.0.0.1:5555 --init=True
 # iOS
 python run.py --platform=iOS --wda=com.facebook.WebDriverAgentRunner.utx.xctrunner --init=True
+```
+>参数优先级大于配置文件
+## web使用说明
+
+- 下载好chrome浏览器对应的驱动，放到driver文件夹中
+> 注意：文件名规范 【Linux/Mac：chromedriver】【Windows：chromedriver.exe】
+- 只需在配置文件中填好相关内容，即可运行！
+```ini
+[web_info]
+;被测的主页url
+url = https://www.baidu.com/
+;是否无界面运行
+headless = False
+
+[reruns]
+;失败后再次运行次数，默认1次
+times = 1
+
+[mode]
+;0表示 运行[suites][cases]选择的用例  1表示运行全部用例
+is_all = 0
+
+[suites]
+;填写用例的关键字
+cases = chrome
+
+```
+
+- web启动命令
+1. 普通启动
+```shell
+python run.py
+```
+2. 参数化启动
+```shell
+python run.py --headless=True --driver=/Users/admin/driverpath
 ```
 >参数优先级大于配置文件
 
