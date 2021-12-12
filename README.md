@@ -1,4 +1,5 @@
 # UTX
+![PyPI](https://img.shields.io/pypi/v/utx) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/utx) ![GitHub top language](https://img.shields.io/github/languages/top/openutx/utx) ![PyPI - Downloads](https://img.shields.io/pypi/dm/utx?style=plastic) ![GitHub stars](https://img.shields.io/github/stars/openutx/utx?style=social) ![https://blog.csdn.net/flower_drop](https://img.shields.io/badge/csdn-%40flower__drop-orange)
 
 ## logo
 ![](https://files.mdnice.com/user/17535/e7c69d65-c488-4640-9832-acc737fea79f.png)
@@ -15,6 +16,8 @@ pip install -U utx
 
 - 简单是更好的
 - 每个人都能用python写自动化
+- UI自动化跟的上冲刺迭代和UI变更
+
 
 这就是utx的设计理念。
 
