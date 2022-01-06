@@ -133,6 +133,10 @@ filename = app_test.apk
 ;失败后再次运行次数，默认1次
 times = 1
 
+[paths]
+;自定义执行case目录层级，文件夹名称（例如：smoke），默认为空
+name = 
+
 [mode]
 ;0表示 运行[suites][cases]选择的用例  1表示运行全部用例
 is_all = 0
@@ -170,6 +174,10 @@ headless = False
 [reruns]
 ;失败后再次运行次数，默认1次
 times = 1
+
+[paths]
+;自定义执行case目录层级，文件夹名称（例如：smoke），默认为空
+name = 
 
 [mode]
 ;0表示 运行[suites][cases]选择的用例  1表示运行全部用例
