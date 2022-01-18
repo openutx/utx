@@ -114,7 +114,7 @@ utx本身是很轻的。
 - 只需在配置文件中填好相关内容，即可运行！
 ```ini
 [device_info]
-;设备远程链接URL 设备ip+端口或者设备唯一标识id
+;设备远程链接URL 设备ip+端口或者设备唯一标识id，多个设备以,分割；例如 设备1,设备2,设备3
 device = 127.0.0.1:5555
 ;设备平台iOS或者Android
 platform = android
@@ -159,6 +159,8 @@ python run.py --platform=Android --device=127.0.0.1:5555 --init=True
 python run.py --platform=iOS --wda=com.facebook.WebDriverAgentRunner.utx.xctrunner --init=True
 ```
 >参数优先级大于配置文件
+> >多个设备以,分割; 例如 python run.py --platform=Android --device=设备1,设备2,设备3 --init=True
+
 ## web使用说明
 
 - 下载好chrome浏览器对应的驱动，放到driver文件夹中
