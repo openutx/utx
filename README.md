@@ -1,8 +1,7 @@
 # UTX
-![PyPI](https://img.shields.io/pypi/v/utx) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/utx) ![GitHub top language](https://img.shields.io/github/languages/top/openutx/utx) ![PyPI - Downloads](https://img.shields.io/pypi/dm/utx?style=plastic) ![GitHub stars](https://img.shields.io/github/stars/openutx/utx?style=social) ![https://blog.csdn.net/flower_drop](https://img.shields.io/badge/csdn-%40flower__drop-orange)
-
+![PyPI](https://img.shields.io/pypi/v/utx) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/utx) [![Downloads](https://static.pepy.tech/personalized-badge/utx?period=total&units=international_system&left_color=grey&right_color=brightgreen&left_text=downloads/total)](https://pepy.tech/project/utx) ![GitHub top language](https://img.shields.io/github/languages/top/openutx/utx) ![GitHub stars](https://img.shields.io/github/stars/openutx/utx?style=social) ![https://blog.csdn.net/flower_drop](https://img.shields.io/badge/csdn-%40flower__drop-orange)
 ## logo
-![](https://files.mdnice.com/user/17535/e7c69d65-c488-4640-9832-acc737fea79f.png)
+![](https://cdn.jsdelivr.net/gh/openutx/static/image/utx.png)
 ## 安装
 - 命令行执行
 ```
@@ -23,7 +22,7 @@ pip install -U utx
 
 
 ## 项目结构
-![](https://files.mdnice.com/user/17535/555b68ce-bc10-472b-a904-b0b17203f58a.png)
+![](https://cdn.jsdelivr.net/gh/openutx/static/image/jg.png)
 
 - utx提供了快速创建项目的能力，也就是脚手架。
 - 【app脚手架】
@@ -61,8 +60,7 @@ Created file: demo/report/summary_template.html
 ```
 ## 调用流程图
 
-![](https://files.mdnice.com/user/17535/b6cf34a4-c973-412e-bbef-0d56d418e895.png)
-
+![](https://cdn.jsdelivr.net/gh/openutx/static/image/lc.png)
 
 ## 专注于写脚本
 
@@ -121,7 +119,7 @@ platform = android
 ;ios设备驱动包名，仅测试iOS时需要
 wda = com.facebook.WebDriverAgentRunner.utx.xctrunner
 ;是否执行安装卸载操作 True/False
-init = True
+init = False
 
 [app_info]
 ;app包名
@@ -138,8 +136,10 @@ times = 1
 name = 
 
 [mode]
-;0表示 运行[suites][cases]选择的用例  1表示运行全部用例
-is_all = 0
+;False 表示 运行[suites][cases]选择的用例，True表示运行全部用例
+is_all = True
+;是否录制视频 True/False
+record = False
 
 [suites]
 ;填写用例的关键字
@@ -182,8 +182,8 @@ times = 1
 name = 
 
 [mode]
-;0表示 运行[suites][cases]选择的用例  1表示运行全部用例
-is_all = 0
+;False 表示 运行[suites][cases]选择的用例，True表示运行全部用例
+is_all = True
 
 [suites]
 ;填写用例的关键字
@@ -205,5 +205,5 @@ python run.py --headless=True --driver=/Users/admin/driverpath
 ## 运行结果
 - 报告展示
 
-![](https://files.mdnice.com/user/17535/29b7a536-9e30-45e3-b7ed-727a2091b910.png)
+![](https://cdn.jsdelivr.net/gh/openutx/static/image/bg.png)
 
