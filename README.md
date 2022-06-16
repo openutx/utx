@@ -163,8 +163,8 @@ python run.py --platform=iOS --wda=com.facebook.WebDriverAgentRunner.utx.xctrunn
 
 ## web使用说明
 
-- 下载好chrome浏览器对应的驱动，放到driver文件夹中
-> 注意：文件名规范 【Linux/Mac：chromedriver】【Windows：chromedriver.exe】
+- 无需关注 chrome浏览器驱动
+> 注意：无需配置 chromedriver ，系统会自动化维护匹配版本。
 - 只需在配置文件中填好相关内容，即可运行！
 ```ini
 [web_info]
