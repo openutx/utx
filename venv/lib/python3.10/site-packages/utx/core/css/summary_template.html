@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/openutx/static/image/fav.ico">
+<!-- surprise form lijiawei -->
+<html>
+
+<head>
+  <title>UTX Statistics</title>
+  <style>
+    a {
+      text-decoration: none;
+      color: #f6fcff;
+    }
+    a:hover {
+    color: #94c3ee;
+    text-decoration:underline;}
+
+    body {
+      font-family: "微软雅黑";
+      color: #f6fcff;
+      background-color: #12182A;
+    }
+
+    .fail {
+      color: #ec5e5e;
+      width: 7emem;
+      text-align: center;
+    }
+
+    .success {
+      color: #4be64b;
+      width: 7emem;
+      text-align: center;
+    }
+
+    .details-col-elapsed {
+      width: 7em;
+      text-align: center;
+      height: 50px;
+    }
+
+    .details-col-msg {
+      width: 7em;
+      text-align: center;
+      background-color: #121C34;
+      height: 50px;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .table {
+      margin: 0 auto;
+      border: 1px #f6fcff;
+      background-color: #121C34;
+    }
+
+    .text {
+      text-align: center;
+    }
+
+    #td {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div>
+      <h2 class="title">UTX Statistics</h2>
+    </div>
+    <table width="800" border="thin" cellspacing="0" cellpadding="0" class="table">
+      <tr width="600">
+        <th width="300" class='details-col-msg'>测试用例</th>
+        <th class='details-col-msg'>执行结果</th>
+      </tr>
+      <p class="text">运行设备：{{results[0]['devices']}}</p>
+      <p class="text">{% for r in results[0]['result'] %}</p>
+<!--      <p class="text">运行设备：{{r.devices}}</p>-->
+      <tr>
+        <td class='details-col-elapsed'>
+          <a href="../../logs/{{results[0]['devices']}}/{{r.name}}/log.html" target="view_window">{{r.name}}</a>
+        </td>
+        <td class="{{'success' if r.result else 'fail'}}" id="td">{{"成功" if r.result else "失败"}}</td>
+      </tr>
+      <p class="text">{% endfor %}</p>
+    </table>
+  </div>
+</body>
+
+</html>

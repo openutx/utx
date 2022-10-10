@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: facebook-wda
+Version: 1.4.6
+Summary: Python Client for Facebook WebDriverAgent
+Home-page: https://github.com/openatx/facebook-wda
+Author: "codeskyblue"
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: requests (>=2.9.1)
+Requires-Dist: six
+Requires-Dist: retry
+Requires-Dist: Pillow
+Requires-Dist: cached-property (~=1.5.1)
+Requires-Dist: Deprecated (~=1.2.6)
+
+Documentation in <https://github.com/openatx/facebook-wda>
+
+
+

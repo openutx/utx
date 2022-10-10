@@ -1,0 +1,2 @@
+[console_scripts]
+airtest = airtest.cli.__main__:main

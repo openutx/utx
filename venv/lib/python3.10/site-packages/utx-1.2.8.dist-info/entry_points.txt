@@ -1,0 +1,2 @@
+[console_scripts]
+utx = utx.cli.cli:main

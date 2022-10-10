@@ -1,0 +1,3 @@
+# Customize third-parties
+# pip install --default-timeout=6000 -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+utx
